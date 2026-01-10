@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+    url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    background: #1e40af;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.light-bg {
+    background: #f5f7fb;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* CONTACT */
+.contact-box {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 1.5s ease;
+}
+
+.fade-up {
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
